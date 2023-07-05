@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d94f237-638d-42e0-99e6-81bd66304d47" name="Changes" comment="Section 20.330(JavaFX; Writing Binary Files with Java NIO): introduction to ByteBuffer, turn string into bytes (byte[], then as buffer ByteBuffer.wrap()), set buffer capacity with ByteBuffer.allocate(), and the requirements of .flip() when switching from read/write viceversa">
+    <list default="true" id="4d94f237-638d-42e0-99e6-81bd66304d47" name="Changes" comment="Section 20.331(JavaFX; Reading Files with NIO): introduction to passing index to buffer.getInt() etc as alternative instead of using buffer.flip(); demonstrated how to read data from a channel via reading data into buffers; using buffer.array() and .hasArray() as checks for possible ways to retrieve data from a buffer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/corcega/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Main.java" afterDir="false" />
     </list>
@@ -89,12 +89,20 @@
       <option name="project" value="LOCAL" />
       <updated>1688192064033</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Section 20.331(JavaFX; Reading Files with NIO): introduction to passing index to buffer.getInt() etc as alternative instead of using buffer.flip(); demonstrated how to read data from a channel via reading data into buffers; using buffer.array() and .hasArray() as checks for possible ways to retrieve data from a buffer">
+      <created>1688534441482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688534441482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Section 20.329(JavaFX; Reading and Writing with Java): finishing off the video" />
     <MESSAGE value="Section 20.330(JavaFX; Writing Binary Files with Java NIO): introduction to ByteBuffer, turn string into bytes (byte[], then as buffer ByteBuffer.wrap()), set buffer capacity with ByteBuffer.allocate(), and the requirements of .flip() when switching from read/write viceversa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 20.330(JavaFX; Writing Binary Files with Java NIO): introduction to ByteBuffer, turn string into bytes (byte[], then as buffer ByteBuffer.wrap()), set buffer capacity with ByteBuffer.allocate(), and the requirements of .flip() when switching from read/write viceversa" />
+    <MESSAGE value="Section 20.331(JavaFX; Reading Files with NIO): introduction to passing index to buffer.getInt() etc as alternative instead of using buffer.flip(); demonstrated how to read data from a channel via reading data into buffers; using buffer.array() and .hasArray() as checks for possible ways to retrieve data from a buffer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 20.331(JavaFX; Reading Files with NIO): introduction to passing index to buffer.getInt() etc as alternative instead of using buffer.flip(); demonstrated how to read data from a channel via reading data into buffers; using buffer.array() and .hasArray() as checks for possible ways to retrieve data from a buffer" />
   </component>
 </project>
