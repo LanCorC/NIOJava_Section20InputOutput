@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4d94f237-638d-42e0-99e6-81bd66304d47" name="Changes" comment="Section 20.332(JavaFX; Absolute and Relative Reads): reminder to not mix absolute and relative reads to prevent confusion; compared ByteBuffer.wrap() to ByteBuffer.allocate(); preparation code for next video">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/corcega/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

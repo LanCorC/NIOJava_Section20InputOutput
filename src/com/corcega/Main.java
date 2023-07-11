@@ -19,15 +19,19 @@ public class Main {
 //            buffer.put(outputBytes).putInt(245).putInt(-98765).put(outputBytes2).putInt(1000);
 //            buffer.flip();
 
+            long[] numbersPositionInData = new long[3]; //added for challenge
             byte[] outputBytes = "Hello World!".getBytes();
             buffer.put(outputBytes);
             long int1Pos = outputBytes.length;
+            numbersPositionInData[2] = buffer.position(); //added for challenge
             buffer.putInt(245);
             long int2Pos = int1Pos + Integer.BYTES;
+            numbersPositionInData[1] = buffer.position(); //added for challenge
             buffer.putInt(-98765);
             byte[] outputBytes2 = "Nice to meet you".getBytes();
             buffer.put(outputBytes2);
             long int3Pos = int2Pos + Integer.BYTES + outputBytes2.length;
+            numbersPositionInData[0] = buffer.position(); //added for challenge
             buffer.putInt(1000);
             buffer.flip();
 
@@ -51,6 +55,11 @@ public class Main {
             System.out.println("inputString2 = " + new String(inputString2));
             System.out.println("int3 = " + readBuffer.getInt());
 
+            System.out.println("Now backwards: ");
+            for (int i = 0; i < 3; i++) {
+                System.out.println(
+                        readBuffer.getInt((int) numbersPositionInData[i]));
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
